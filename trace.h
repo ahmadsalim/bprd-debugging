@@ -1,7 +1,7 @@
 #ifndef TRACE_H_
 #define TRACE_H_
 #include <stdio.h>
-#define __TRACE(typ, fmt, ...) printf(typ " (%s:%d): " fmt "\n%s", __FILE__, __LINE__,  __VA_ARGS__);
+#define __TRACE(typ, fmt, ...) printf(typ " (%s:%d): " fmt "\n%s", __FILE__, __LINE__,  __VA_ARGS__)
 #if TRACE_LEVEL >= 0
 #define __TRACE_ERROR(fmt, ...) __TRACE("ERROR", fmt, __VA_ARGS__)
 #define TRACE_ERROR(...) __TRACE_ERROR(__VA_ARGS__, "")
