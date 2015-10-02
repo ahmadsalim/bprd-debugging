@@ -21,7 +21,7 @@ The different trace levels are shown in the followin table:
 | < 0         | Nothing                |
 | 0           | Errors                 |
 | 1           | Errors and Warnings    |
-| >= 2        | Everything             |
+| &geq; 2        | Everything             |
 
 ## Debugging Guide and Commands
 
