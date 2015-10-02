@@ -16,12 +16,12 @@ If you want to increase the trace level, simply provide the `-DTRACE_LEVEL=level
 
 The different trace levels are shown in the followin table:
 
-| TRACE_LEVEL | Shown      |
-|:-----------:|:----------:|
-| < 0         | Nothing    |
-| 0           | Errors     |
-| 1           | Warnings   |
-| >= 2        | Everything |
+| TRACE_LEVEL | Shown                  |
+|:-----------:|:----------------------:|
+| < 0         | Nothing                |
+| 0           | Errors                 |
+| 1           | Errors and Warnings    |
+| >= 2        | Everything             |
 
 ## Debugging Guide and Commands
 
