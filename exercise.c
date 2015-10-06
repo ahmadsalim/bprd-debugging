@@ -37,7 +37,7 @@ void print_list(list *l) {
     printf("%d :: ", l->head);
     l = l->tail;
   } while(is_cons(l));
-  printf("nil");
+  printf("nil\n");
 }
 
 void free_list(list *l) {
@@ -47,10 +47,32 @@ void free_list(list *l) {
   }
 }
 
+void test1() {
+  int i;
+  for (i = 5; i < 10; i++) {
+    list *l = nats(i);
+    print_list(l);
+    free_list(l);
+  }
+}
+
+void test2() {
+  // fill in ...
+}
+
+void test3() {
+  // fill in ...
+}
+
+void test4() {
+  // fill in ...
+}
+
 int main(int argc, const char *argv[])
 {
-  list *l = nats(10);
-  print_list(l);
-  free_list(l);
+  test1();
+  test2();
+  test3();
+  test4();
   return EXIT_SUCCESS;
 }
