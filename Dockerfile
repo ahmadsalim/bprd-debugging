@@ -1,7 +1,7 @@
 # Dockerfile for BPRD Debugging Exercise
 
 # Use ubuntu as base
-FROM registry.hub.docker.com/_/ubuntu/
+FROM ubuntu:14.04
 
 # Dependencies according to 'fbinfer.com' README
 
