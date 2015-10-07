@@ -1,4 +1,4 @@
-# Dockerfile for BPRD Debugging Exercise
+## Dockerfile for BPRD Debugging Exercise
 
 # Use ubuntu as base
 FROM ubuntu:14.04
