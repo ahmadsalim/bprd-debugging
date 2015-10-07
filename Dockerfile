@@ -10,6 +10,7 @@ RUN apt-get update && \
     apt-get install -y build-essential \
                        wget \
                        git \
+                       gdb \
                        libgmp-dev \
                        libmpc-dev \
                        libmpfr-dev \
