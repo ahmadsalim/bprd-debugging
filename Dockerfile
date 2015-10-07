@@ -40,4 +40,4 @@ RUN mkdir /data && cd /data
 COPY *.c /data/
 COPY *.h /data/
 
-CMD ["/bin/bash"]
+CMD ["/bin/bash", "--init-file", "/etc/bashrc"]
