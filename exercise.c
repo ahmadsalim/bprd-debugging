@@ -45,6 +45,7 @@ void free_list(list *l) {
     free(l);
     l = l->tail;
   }
+  free(l->tail);
 }
 
 void test1() {
