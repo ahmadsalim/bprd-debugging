@@ -37,7 +37,7 @@ RUN eval "$(./opam config env)" && \
 
 RUN mkdir /data && cd /data
 
-COPY *.c /data
-COPY *.h /data
+COPY *.c /data/
+COPY *.h /data/
 
 CMD ["/bin/bash"]
