@@ -33,6 +33,7 @@ RUN wget https://github.com/facebook/infer/releases/download/v0.3.0/infer-linux6
 RUN mkdir /data && \
     cd /data
 
-ADD *.c *.h /data
+COPY *.c /data
+COPY *.h /data
 
 CMD ["/usr/bin/bash"]
