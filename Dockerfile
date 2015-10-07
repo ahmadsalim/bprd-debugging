@@ -16,7 +16,7 @@ RUN add-apt-repository ppa:ubuntu-toolchain-r/test && \
                        openjdk-7-jdk \
                        python-software-properties \
                        unzip \
-                       zlib1g-dev \
+                       zlib1g-dev
 
 RUN wget https://github.com/ocaml/opam/releases/download/1.2.2/opam-1.2.2-x86_64-Linux -O opam && \
     chmod +x opam && \
