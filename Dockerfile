@@ -35,8 +35,7 @@ RUN eval "$(./opam config env)" && \
     make -C infer && \
     (echo "export PATH=$(pwd)/infer/bin:'$PATH'" >> /etc/bashrc)
 
-RUN mkdir /data && \
-    cd /data
+RUN mkdir /data && cd /data
 
 COPY *.c /data
 COPY *.h /data
