@@ -16,4 +16,7 @@ Off by one error.
 Binary search:
 ...
 
+List reverse:
+NULL Pointer access
+
 Run fbinfer on some of the example inputs.
