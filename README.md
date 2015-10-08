@@ -12,7 +12,7 @@ TRACE_ERROR("Unexpected argc: %d", argc);
 ```
 
 The level of tracing output is configurable on compile-time and will per default only show errors.
-If you want to increase the trace level, simply provide the `-DTRACE_LEVEL=level` argument to your compiler where _level_ is the level of output desired; for example, `gcc -DTRACE_LEVEL=3 -o example.out example.c` will print trace.
+If you want to increase the trace level, simply provide the `-DTRACE_LEVEL=level` argument to your compiler where _level_ is the level of output desired; for example, `gcc -DTRACE_LEVEL=3 -o example.out example.c -lm` will print trace.
 
 The different trace levels are shown in the followin table:
 
@@ -21,12 +21,12 @@ The different trace levels are shown in the followin table:
 | < 0         | Nothing                |
 | 0           | Errors                 |
 | 1           | Errors and Warnings    |
-| &geq; 2        | Everything             |
+| &geq; 2     | Everything             |
 
 ## Debugging Guide and Commands
 
 In order to use the debugger optimally, you have to compile your program by adding the `-g` flag.
-For example, if we are compiling the file `example.c` we can issue the following command `gcc -Wall -g -o example.out example.c` (or similar with clang, msvc, icc, etc.).
+For example, if we are compiling the file `example.c` we can issue the following command `gcc -Wall -g -o example.out example.c -lm` (or similar with clang, msvc, icc, etc.).
 
 To debug your program you run it as usual, except you add `gdb` or `lldb` to the start, e.g., `gdb ./example.out'.
 This will get you into the debugging shell where something similar to the following will be shown:
